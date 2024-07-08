@@ -2,10 +2,10 @@ FROM ubuntu:latest
 
 RUN apt-get update && apt-get install -y \
     python3.12 \
-    pipx \
+    python3-pip \
     git
 
-RUN pipx install pyyaml
+RUN pip3 install pyyaml --break-system-packages
 
 COPY feed.py /usr/bin/feed.py
 
