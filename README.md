@@ -2,20 +2,6 @@
 
 A GitHub action to generate a podcast feed from a YAML file. YAML is much easier to read and write than XML, and this action will convert your YAML file into a valid podcast feed.
 
-## Notes
-
-This is created per LinkedIn Learning: https://www.linkedin.com/learning/paths/career-essentials-in-github-professional-certificate.
-
-The original Dockerfile in the LI course video causes an error in installing pyyaml. The following change is made to Dockerfile in this app:
-
-```Dockerfile
-RUN pip3 install pyyaml
-```
-to:
-```
-RUN pip3 install pyyaml --break-system-packages
-```
-
 ## Usage
 
 ### Turn on Github Pages
@@ -62,3 +48,18 @@ jobs:
       - name: Run Feed Generator
         uses: tkomabay/podcast-generator@main
 ```
+
+## Notes
+
+This is created per LinkedIn Learning: https://www.linkedin.com/learning/paths/career-essentials-in-github-professional-certificate.
+
+The original Dockerfile in the LI course video causes an error in installing pyyaml. The following change is made to Dockerfile in this app:
+
+```Dockerfile
+RUN pip3 install pyyaml
+```
+to:
+```Dockerfile
+RUN pip3 install pyyaml --break-system-packages
+```
+
