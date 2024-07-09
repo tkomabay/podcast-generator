@@ -1,6 +1,6 @@
 # Podcast Feed Generator
 
-A GitHub action to generate a podcast feed from a YAML file. Originally from LinkedIn Learning https://www.linkedin.com/learning/paths/career-essentials-in-github-professional-certificate. YAML is much easier to read and write than XML, and this action will convert your YAML file into a valid podcast feed.
+A GitHub action to generate a podcast feed from a YAML file. Originates from LinkedIn Learning: https://www.linkedin.com/learning/paths/career-essentials-in-github-professional-certificate. YAML is much easier to read and write than XML, and this action will convert your YAML file into a valid podcast feed.
 ## Usage
 
 ### Turn on Github Pages
